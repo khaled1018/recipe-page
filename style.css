@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --page-background: #f3e6d8;
+  --card-background: #ffffff;
+  --break-line: #e4ded8;
+  --normal-txt: #5f574e;
+  --txt-bold: #302d2c;
+  --sub-heading: #854632;
+  --prep-time-txt: #7b284f;
+  --prep-time-box: #fff5fa;
+}
+
+.darkmode {
+  --page-background: #121212;
+  --card-background: #1e1e1e;
+  /* --sec-background: #252525; */
+  --sub-heading: #ffffff;
+  --desc-txt: #e0e0e0;
+  --sec-titel: #ffd700;
+  --body-txt: #b0b0b0;
+  --txt-bold: #ffcc80;
+  /* --card-border: #333333; */
+  --prep-time-box: #292929;
+  --prep-time-txt: #ffcc80;
+  --bullets: #ff9800;
+  --nutri-table: #252525;
+  --heading-table: #ffcc80;
+  --data-table: #ffffff;
+}
+
+body {
+  background-color: var(--page-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 555px;
+  background-color: var(--card-background);
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  font-size: 1rem;
+  margin: 3rem 0;
+}
+
+.meal {
+  width: 100%;
+  border-radius: 8px;
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 2.1rem;
+  margin: 0.5em 0;
+  color: var(--em-txt);
+}
+
+.meal-info {
+  font-size: 0.8rem;
+  color: var(--normal-txt);
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}
+
+.prep-time {
+  background-color: var(--prep-time-box);
+  padding: 1.4rem 1.2rem;
+  margin-top: 1rem;
+  font-family: "Outfit", sans-serif;
+  border-radius: 12px;
+}
+
+.prep-time-heading {
+  color: var(--prep-time-txt);
+}
+
+.prep-time-info {
+  margin-left: 0.38rem;
+}
+
+.prep-time-info li {
+  list-style-type: none;
+  font-size: 0.8rem;
+  color: var(--normal-txt);
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}
+
+.prep-time-info li::before {
+  content: ".";
+  margin-right: .7em;
+  color: var(--prep-time-txt);
+  font-size: 1.5rem;
+  position: relative;
+  top: -3px;
+}
+
+h2 {
+  margin: 1.2rem 0;
+  color: var(--sub-heading);
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+.ingredients-info {
+  font-family: "Outfit", sans-serif;
+  margin-left: 0.38rem;
+  margin-bottom: 1.6em;
+}
+
+.ingredients-info li {
+  list-style-type: none;
+  font-size: 0.8rem;
+  color: var(--normal-txt);
+  font-family: "Outfit", sans-serif;
+  margin-bottom: .8em;
+  font-weight: 400;
+
+}
+
+.ingredients-info li::before {
+  content: "▪";
+    color: var(--sub-heading);
+    margin-right: .7em;
+    font-size: 0.75rem;
+    position: relative;
+    top: 0;
+}
+
+.instructions-info {
+  font-family: "Outfit", sans-serif;
+  margin-left: 0.38rem;
+  margin-bottom: 1.6em;
+}
+
+.instructions-info li {
+  /* list-style-type: none; */
+  font-size: 0.8rem;
+  color: var(--normal-txt);
+  font-family: "Outfit", sans-serif;
+  margin-bottom: .8em;
+  font-weight: 400;
+
+}
+
