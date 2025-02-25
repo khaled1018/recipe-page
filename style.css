@@ -16,6 +16,24 @@
   --prep-time-box: #fff5fa;
 }
 
+.darkmode {
+  --page-background: #121212;
+  --card-background: #1e1e1e;
+  /* --sec-background: #252525; */
+  --sub-heading: #ffffff;
+  --desc-txt: #e0e0e0;
+  --sec-titel: #ffd700;
+  --body-txt: #b0b0b0;
+  --txt-bold: #ffcc80;
+  /* --card-border: #333333; */
+  --prep-time-box: #292929;
+  --prep-time-txt: #ffcc80;
+  --bullets: #ff9800;
+  --nutri-table: #252525;
+  --heading-table: #ffcc80;
+  --data-table: #ffffff;
+}
+
 body {
   background-color: var(--page-background);
   display: flex;
@@ -27,14 +45,34 @@ body {
   width: 555px;
   background-color: var(--card-background);
   border-radius: 8px;
-  padding: 1.5rem 2rem;
+  /* padding: 1.5rem 2rem; */
+  padding: 1.5rem 0;
   font-size: 1rem;
   margin: 3rem 0;
 }
 
+@media (max-width: 624px) {
+  .container {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  figure .meal {
+    border-radius: 0px;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+section {
+  padding: 0 1.7rem;
+}
+
 .meal {
-  width: 100%;
+  width: 89%;
   border-radius: 8px;
+  margin: 0 2rem;
 }
 
 h1 {
@@ -55,6 +93,7 @@ h1 {
 .prep-time {
   background-color: var(--prep-time-box);
   padding: 1.5rem 1.2rem 1rem;
+  margin: 0 1.7rem;
   margin-top: 1rem;
   font-family: "Outfit", sans-serif;
   border-radius: 12px;
@@ -92,7 +131,7 @@ h2 {
 
 .ingredients-info {
   font-family: "Outfit", sans-serif;
-  margin-left: 1.2em;
+  margin-left: 1.1em;
   margin-bottom: 1.6em;
 }
 
@@ -158,12 +197,25 @@ h2 {
   padding-top: 0.6rem;
 }
 
+.fat {
+  padding-bottom: 1rem;
+}
+
 .term {
-  padding-left: 1.4rem;
+  padding-left: 1.8rem;
   color: var(--normal-txt);
 }
 .value {
   color: var(--sub-heading);
   font-weight: 600;
   padding-right: 1.6rem;
+}
+
+hr {
+  width: 89%;
+  margin: auto;
+}
+
+tr hr {
+  width: 100%;
 }
